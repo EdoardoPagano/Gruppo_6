@@ -1,0 +1,80 @@
+    body {
+        background-color: black;
+        margin: 0px;
+    }
+    
+    section {
+        color: white;
+        border-bottom: 8px solid rgb(27, 27, 27);
+    }
+    
+    .first {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, .8) 0%, rgba(0, 0, 0, .5) 50%, rgba(0, 0, 0, .8) 100%), url("assets/background.jpg");
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    header img {
+        width: 8.375rem;
+        height: 2.25rem;
+        padding-top: 26px;
+        padding-left: 56px;
+    }
+    
+    .rightside {
+        display: inline;
+        float: right;
+        padding-top: 26px;
+        padding-right: 56px;
+    }
+    
+    article {
+        padding-top: 8%;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    article>h1 {
+        font-size: 3.125rem;
+        margin-bottom: 0px;
+        padding-bottom: 10px;
+    }
+    
+    article>h2 {
+        font-size: 1.625rem;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+    
+    article>p {
+        font-size: 1.2rem;
+        padding-bottom: 10px;
+    }
+    
+    input {
+        min-width: 450px;
+        height: 60px;
+        box-sizing: border-box;
+        font-size: 16px;
+        border: solid 1px #8c8c8c;
+        padding-left: 10px;
+    }
+    
+    button {
+        background-color: #e50914;
+        color: white;
+        vertical-align: middle;
+        cursor: pointer;
+        font-weight: 400;
+        border: solid 0px;
+    }
+    
+    form>button {
+        height: 60px;
+        width: 140px;
+        margin-left: -4px;
+        margin-top: -1px;
+        font-size: 1.625rem;
+    }
