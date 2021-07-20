@@ -1,168 +1,219 @@
-    body {
-        background-color: black;
-        margin: 0px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    section {
-        color: white;
-        border-bottom: 8px solid rgb(27, 27, 27);
-    }
-    
-    .first {
-        background-image: linear-gradient(to top, rgba(0, 0, 0, .9) 0%, rgba(0, 0, 0, .4) 50%, rgba(0, 0, 0, .8) 100%), url("assets/background.jpg");
-        height: 100vh;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
-    header img {
-        width: 8.375rem;
-        height: 2.25rem;
-        padding-top: 26px;
-        padding-left: 56px;
-    }
-    
-    .rightside {
-        float: right;
-        padding-top: 26px;
-        padding-right: 56px;
-    }
-    
-    select {
-        background: rgba(0, 0, 0, .4);
-        border: 1px solid #aaa;
-        color: #fff;
-        font-size: .875rem;
-        padding: .500rem .700rem;
-        margin-right: 20px;
-    }
-    
-    .rightside>button {
-        height: 35px;
-        width: 80px;
-        font-size: 1rem;
-        border-radius: 4px;
-    }
-    
-    .first>article {
-        padding-top: 8%;
-        text-align: center;
-    }
-    
-    h1 {
-        font-size: 3.125rem;
-        margin-bottom: 0px;
-        padding-bottom: 10px;
-    }
-    
-    article h2 {
-        font-size: 1.625rem;
-        margin: 0;
-        padding-bottom: 10px;
-        font-weight: 200;
-    }
-    
-    article>h3 {
-        font-size: 1.2rem;
-        padding-bottom: 10px;
-        font-weight: 200;
-    }
-    
-    input {
-        min-width: 450px;
-        height: 60px;
-        box-sizing: border-box;
-        font-size: 16px;
-        border: solid 1px #8c8c8c;
-        padding-left: 10px;
-    }
-    
-    button {
-        background-color: #e50914;
-        color: white;
-        vertical-align: middle;
-        cursor: pointer;
-        font-weight: 400;
-        border: solid 0px;
-    }
-    
-    form>button {
-        height: 60px;
-        width: 140px;
-        margin-left: -4px;
-        margin-top: -2px;
-        font-size: 1.625rem;
-    }
-    
-    form>button:hover {
-        background-color: #fd0101;
-    }
-    
-    .bottomform {
-        margin-bottom: 80px;
-    }
-    
-    .featurelist {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 1% 10%;
-    }
-    
-    .flexitem {
-        flex: 0 1 auto;
-        width: 50%;
-        margin: 7% 0;
-    }
-    
-    .faq {
-        text-align: center;
-    }
-    
-    footer {
-        color: #757575;
-        padding: 0 14%;
-    }
-    
-    footer a {
-        text-decoration: none;
-        color: inherit;
-    }
-    
-    footer a:hover {
-        text-decoration: underline;
-    }
-    
-    td {
-        padding: 7px 42px;
-        font-size: 13px;
-    }
-    
-    footer>select {
-        border: 1px solid rgb(75, 75, 75, .8);
-        color: #a0a0a0;
-        margin: 15px 42px;
-        font-size: 1rem;
-        width: 120px;
-        height: 50px;
-    }
-    
-    footer p {
-        padding-left: 42px;
-    }
-    
-    .lastrow {
-        font-size: 13px;
-        margin-bottom: 30px;
-    }
-    
-    .call {
-        padding-top: 60px
-    }
-    
-    .kidspic {
-        width: 45%;
-    }
+            @font-face {
+                font-family: 'Netflix Sans Regular';
+                font-style: normal;
+                font-weight: normal;
+                src: local('Netflix Sans Regular'), url('assets/NetflixSansRegular.woff') format('woff');
+            }
+            
+            body {
+                background-color: black;
+                margin: 0px;
+                font-family: Netflix Sans Regular;
+                font-weight: 600;
+            }
+            
+            section {
+                color: white;
+                border-bottom: 8px solid rgb(27, 27, 27);
+            }
+            
+            .first {
+                background-image: linear-gradient(to top, rgba(0, 0, 0, .9) 0%, rgba(0, 0, 0, .4) 50%, rgba(0, 0, 0, .8) 100%), url("assets/background.jpg");
+                height: 100vh;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+            header img {
+                width: 8.375rem;
+                height: 2.25rem;
+                padding-top: 26px;
+                padding-left: 56px;
+            }
+            
+            .rightside {
+                float: right;
+                padding-top: 26px;
+                padding-right: 56px;
+            }
+            
+            select {
+                background: rgba(0, 0, 0, .4);
+                border: 1px solid #aaa;
+                color: #fff;
+                font-size: .875rem;
+                padding: .500rem .700rem;
+                margin-right: 20px;
+            }
+            
+            .rightside>button {
+                height: 35px;
+                width: 80px;
+                font-size: 1rem;
+                border-radius: 4px;
+            }
+            
+            .first>article {
+                padding-top: 8%;
+                text-align: center;
+            }
+            
+            h1 {
+                font-size: 3.125rem;
+                margin-bottom: 0px;
+                padding-bottom: 10px;
+                letter-spacing: 1.7px;
+            }
+            
+            article h2 {
+                font-size: 1.625rem;
+                margin: 0;
+                padding-bottom: 10px;
+                font-weight: 200;
+            }
+            
+            article>h3 {
+                font-size: 1.2rem;
+                padding-bottom: 10px;
+                font-weight: 200;
+            }
+            
+            input {
+                min-width: 450px;
+                height: 60px;
+                box-sizing: border-box;
+                font-size: 16px;
+                border: solid 1px #8c8c8c;
+                padding-left: 10px;
+            }
+            
+            button {
+                background-color: #e50914;
+                color: white;
+                vertical-align: middle;
+                cursor: pointer;
+                font-weight: 400;
+                border: solid 0px;
+            }
+            
+            form>button {
+                height: 60px;
+                width: 140px;
+                margin-left: -4px;
+                margin-top: -2px;
+                font-size: 1.625rem;
+            }
+            
+            form>button:hover {
+                background-color: #fd0101;
+            }
+            
+            .bottomform {
+                margin-bottom: 80px;
+            }
+            
+            .featurelist {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1% 10%;
+            }
+            
+            .flexitem {
+                flex: 0 1 auto;
+                width: 50%;
+                margin: 7% 0;
+            }
+            
+            .faq {
+                text-align: center;
+            }
+            
+            footer {
+                color: #757575;
+                padding: 0 14%;
+            }
+            
+            footer a {
+                text-decoration: none;
+                color: inherit;
+            }
+            
+            footer a:hover {
+                text-decoration: underline;
+            }
+            
+            td {
+                padding: 7px 42px;
+                font-size: 13px;
+            }
+            
+            footer>select {
+                border: 1px solid rgb(75, 75, 75, .8);
+                color: #a0a0a0;
+                margin: 15px 42px;
+                font-size: 1rem;
+                width: 120px;
+                height: 50px;
+            }
+            
+            footer p {
+                padding-left: 42px;
+            }
+            
+            .lastrow {
+                font-size: 13px;
+                margin-bottom: 30px;
+            }
+            
+            .call {
+                padding-top: 60px
+            }
+            
+            .kidspic {
+                width: 45%;
+            }
+            
+            .expandable {
+                background-color: #303030;
+                overflow: hidden;
+                height: 0;
+                border-top: 1px solid black;
+                padding-left: 10px;
+            }
+            
+            .expandable:target {
+                height: max-content;
+            }
+            
+            .expandcontainer header {
+                padding: 25px 30px;
+            }
+            
+            .expandcontainer article {
+                padding: 0 30px;
+            }
+            
+            .expandcontainer header,
+            .expandcontainer article {
+                width: 93%;
+                background-color: #303030;
+                text-align: left;
+                font-size: 1.625em;
+                font-weight: 100;
+            }
+            
+            .expandcontainer a {
+                text-decoration: none;
+                color: white;
+            }
+            
+            .expandcontainer {
+                margin: 15px 20%;
+            }
+            
+            .faqlist {
+                margin: 40px 0px;
+            }
