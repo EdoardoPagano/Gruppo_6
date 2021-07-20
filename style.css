@@ -127,12 +127,6 @@
         padding: 0 15%;
     }
     
-    footer>ul>li {
-        padding: 10px;
-        display: inline;
-        list-style: none;
-    }
-    
     footer a {
         text-decoration: none;
         color: inherit;
@@ -141,4 +135,8 @@
     footer a:hover {
         text-decoration: underline;
     }
-    /*Prova tabella invece di lista per i link footer*/
+    
+    td {
+        padding: 15px 30px;
+        font-size: 13px;
+    }
