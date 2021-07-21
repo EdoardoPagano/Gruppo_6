@@ -2,6 +2,8 @@ body {
     background-color: black ;
 }
 
+/* stilizzazione background img 1a sezione */
+
 .login_language-section {
     width: 100% ;
     height: 695px ;
@@ -10,14 +12,16 @@ body {
     background-image: url("images/background-series.jpg") ;
 }
 
-aside .netflix-logo {
+/* stilizzazione logo e bottoni 1a sezione */
+
+.login_language-section .netflix-logo { 
     max-width: 167px ;
     max-height: 45px ;  
     padding-top: 1% ;  
     padding-left: 3% ;  
 }
 
-aside .language-selector {
+.login_language-section .language-selector {
     color: #fff ;
     background-color: rgba(0,0,0,.4) ;
     font-size: .875rem ;
@@ -41,3 +45,46 @@ form .login-button {
     float: right ;
 }
 
+/* stilizzazione testo 1a sezione */
+
+.login_language-section h1 {
+    color: #fff ;
+    text-align: center ;
+    font-size: 3em ;
+    margin-top: 11% ;
+}
+
+.login_language-section h2 {
+    text-align: center ;
+    color: #fff ;
+    font-size: 1.8em ;
+}
+
+.login_language-section h3 {
+    color: #fff ;
+    text-align: center ;
+    font-size: 1.2em ;
+}
+
+/* stilizzazione form email  */
+
+.form-subscription  {
+    text-align: center ;
+}
+
+.form-email-subscription {
+    background-color: #fff ;
+    width: 500px ;
+    height: 60px ;
+    font-size: 1.1em ;
+}
+
+.form-button-subscription {
+    color: #fff ;
+    background-color: #e50914 ;
+    border: 0px ;
+    border-radius: 2px ;
+    padding: 0px 16px ;
+    height: 60px ;
+    font-size: 1.5em ;
+}
