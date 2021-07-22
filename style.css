@@ -8,14 +8,29 @@ h1 {
     font-size: 40px;
 }
 
-h2, h3 {
+h2 {color: white;
+    text-align: center;
+    font-size: 26px;
+
+}
+
+h3 {
     color: white;
     text-align: center;
+    font-size: 23px;
 }
 
 #first {
     background-image: url(images/background.jpg);
     height: 100vh;
+    display: flexbox;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+footer {
+    padding: 70px 45px 0px;
 }
 
 ul {
@@ -51,12 +66,20 @@ button {
     border: transparent;
     color: white;
     border-radius: 3px;
+    height: 35px;
+    width: 80px;
+    font-size: 1rem;
 }
+
 
 #lang-log>select {
     color: white;
     background-color: transparent;
     font-size: 16px;
+    height: 35px;
+    width: 80px;
+
+
 }
 
 #kids-section {
@@ -68,3 +91,20 @@ button {
 #faq {
     height: 70vh;
 }
+
+#mail {
+    padding: 10px 10px 0px;
+    text-align: start;
+    display: inline-flex;
+    
+    
+}
+
+#faq>ul {
+    color: white;
+}
+
+ul>button {
+    background-color: grey;
+}
+
