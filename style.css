@@ -2,8 +2,15 @@
     background-color: black;
 }
 
-h1, h2, h3, p {
+h1 {
     color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+h2, h3 {
+    color: white;
+    text-align: center;
 }
 
 #first {
@@ -26,4 +33,38 @@ footer>select {
     color: grey;
     background-color: transparent;
     font-size: 16px;
+}
+
+#logo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+header{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+button {
+    background-color: red;
+    border: transparent;
+    color: white;
+    border-radius: 3px;
+}
+
+#lang-log>select {
+    color: white;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+#kids-section {
+    height: 70vh;
+}
+
+
+
+#faq {
+    height: 70vh;
 }
