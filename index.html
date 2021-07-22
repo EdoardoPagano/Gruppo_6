@@ -1,13 +1,84 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Italia - Guardare serie TV online, Guardare film online</title>
     <link rel="shortcut icon" href="images/netflix-logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/784b6e933e.js" crossorigin="anonymous"></script>
+    <title>Netflix Homepage</title>
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+            <img id="logo" src="assets/img/netflix-Logo2.svg" alt="logo di Netflix">
+            <ul>
+                <li>
+                    <button type="button">Accedi</button>
+                </li>
+                <li>
+                    <i class="fas fa-globe">
+
+                    </i>
+                    <select name="lingua" id="lingua">
+                        <option value="it">Italiano</option>
+                        <option value="en">English</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="above-the-fold">
+            <h1>Film, serie TV e tanto altro. Senza limiti</h1>
+            <h2>Guarda ciò che vuoi ovunque. Decidi quando vuoi.</h2>
+            <h3>Vuoi guardare Netflix? Inserisci l'indirizzo email per abbonarti o riattivare il tuo abbonamento.</h3>
+
+            <div id="form">
+                <input type="email" name="email" id="email" placeholder="Indirizzo email">
+                <button type="submit">Inizia <i class="fas fa-angle-right"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="img-right">
+            <h2>Goditi Netflix sulla tua TV.</h2>
+            <p>Guarda Netflix su smart TV, Playstation, Xbox, Chromecast, Apple TV, lettori Blu-ray e molti altri dispositivi.</p>
+        </section>
+
+        <section class="img-left">
+            <h2>Scarica le tue serie da guardare offline.</h2>
+            <p>Salva facilmente i tuoi preferiti così avrai sempre qualcosa da guardare.</p>
+        </section>
+
+        <section class="img-right">
+            <h2>Guarda Netflix ovunque.</h2>
+            <p>Cellulare, tablet, laptop e TV: scegli tu cosa usare per guardare in streaming film e serie TV senza limiti e senza spendere di più.</p>
+        </section>
+
+        <section class="img-left">
+            <h2>Crea profili per i bambini.</h2>
+            <p>I bambini scoprono nuove avventure in compagnia dei loro personaggi preferiti in uno spazio tutto loro già incluso nel tuo abbonamento.</p>
+        </section>
+
+        <section id="faq"> <!-- display: flex - justify content: between  -->
+            <h2>Domande frequenti</h2>
+            <div><p>Cos'è Netflix?</p><p>+</p></div>
+            <div><p>Quanto costa Netflix?</p><p>+</p></div>
+            <div><p>Dove posso guardare Netflix?</p><p>+</p></div>
+            <div><p>Come posso disdire?</p><p>+</p></div>
+            <div><p>Cosa posso guardare su Netflix?</p><p>+</p></div>
+            <div><p>Netflix è adatto ai bambini?</p><p>+</p></div>
+
+            <input type="email" name="email" id="email">
+            <button type="submit">Inizia ></button>
+        </section>
+
+
+    </main>
 </body>
+
 </html>
