@@ -1,0 +1,29 @@
+:root {
+    background-color: black;
+}
+
+h1, h2, h3, p {
+    color: white;
+}
+
+#first {
+    background-image: url(images/background.jpg);
+    height: 100vh;
+}
+
+ul {
+    list-style: none;
+    color: grey;
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
+}
+
+footer>p {
+    color: grey;
+}
+
+footer>select {
+    color: grey;
+    background-color: transparent;
+    font-size: 16px;
+}
