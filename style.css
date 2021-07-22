@@ -47,11 +47,16 @@
                 margin-right: 20px;
             }
             
-            .rightside>button {
-                height: 35px;
-                width: 80px;
+            a.login {
+                background-color: #e50914;
+                padding: 7px 16px;
+                margin-left: 8px;
                 font-size: 1rem;
                 border-radius: 4px;
+                font-family: inherit;
+                font-weight: 100;
+                text-decoration: none;
+                color: white;
             }
             
             .first>article {
@@ -60,7 +65,7 @@
             }
             
             h1 {
-                font-size: 3.125rem;
+                font-size: 3rem;
                 margin-bottom: 0px;
                 padding-bottom: 10px;
                 letter-spacing: 1.7px;
