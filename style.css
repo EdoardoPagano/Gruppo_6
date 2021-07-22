@@ -54,6 +54,8 @@ footer>select {
     position: absolute;
     top: 0px;
     left: 0px;
+    padding: 1%;
+    
 }
 
 header{
@@ -84,20 +86,28 @@ button {
 
 #kids-section {
     height: 70vh;
+    padding: 70px 45px;
 }
 
+article {
+    height: 70vh;
+    padding: 70px 45px;
+}
 
 
 #faq {
     height: 70vh;
+    padding: 70px 45px;
 }
+
+
 
 #mail {
     padding: 10px 10px 0px;
     text-align: start;
-    display: inline-flex;
-    
-    
+    height: 23px;
+    width: 300px;
+       
 }
 
 #faq>ul {
@@ -108,3 +118,16 @@ ul>button {
     background-color: grey;
 }
 
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float: right;
+}
+
+.ultimo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
