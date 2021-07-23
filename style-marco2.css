@@ -1,7 +1,7 @@
 body {
-    background-color: black ;
-    font-family: Netflix Sans Regular ;
     margin: 0 ;
+    font-family: Netflix Sans Regular ;
+    background-color: black ;
 }
 
 @font-face {
@@ -20,100 +20,92 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 3em ;
+    font-size: 3rem ;
     font-weight: bold ;
 }
 
 h2 {
-
+    font-size: 1.8rem ;
 }
-/* stilizzazione background img 1a sezione */
 
-.login_language-section {
+h3 {
+    font-size: 1.2rem ;
+}
+
+.login-section {
     width: 100% ;
     min-height: 100vh ;
     background-size: cover ;
     background-image: linear-gradient(to top, rgba(0, 0, 0, .9) 0%, rgba(0, 0, 0, .4) 50%, rgba(0, 0, 0, .8) 100%), url("images/background-series.jpg") ;
 }
 
-/* stilizzazione logo e bottoni 1a sezione */
-
-.login_language-section .netflix-logo {
+header svg {
     fill: #e50914 ;
     padding-top: 2% ;
     padding-left: 3% ;
 }
 
+aside {
+    float: right ;
+    margin-top: 2% ;
+    margin-right: 3% ;
+}
 
-.login_language-section .language-selector {
+aside select {
     color: #fff ;
     background-color: rgba(0,0,0,.4) ;
     font-size: .875rem ;
     border: 1px solid #aaa ;
     padding-top: .50rem ;
     padding-bottom: .50rem ;  
-    margin-top: 1% ;  
-    float: right ;
+    margin-right: 30px ;
+    padding-left: 5px ;
+    padding-right: 5px ;
+    -webkit-appearance: none ;
 }
 
-form .login-button {
+aside a {
     background-color: #e50914 ;
     color: #fff ;
+    text-decoration: none ;
     padding: 7px 17px ;
     border-radius: 3px ;
     font-size: 1rem ;
-    border: 0px ;
-    margin-right: 3% ;  
-    margin-left: 2% ;  
-    margin-top: 1% ;  
-    float: right ;
+    border: 0px ;  
 }
 
-/* stilizzazione testo 1a sezione */
-
-.login_language-section h1 {
+.login-section h1 {
     text-align: center ;
     margin-top: 5% ;
     font-weight: bold ;
 }
 
-.login_language-section h2 {
-    text-align: center ;
-    color: #fff ;
-    font-size: 1.8em ;
-}
-
-.login_language-section h3 {
-    color: #fff ;
-    text-align: center ;
-    font-size: 1.2em ;
-}
-
-/* stilizzazione form email  */
-
-.form-subscription  {
+.login-section h2, h3 {
     text-align: center ;
 }
 
-.form-email-subscription {
-    background-color: #fff ;
+.subscription-form {
+    text-align: center ;
+    height: 60px ;
+}
+
+input[type="email"], button[type="submit"] {
+    min-height: 100% ;
+}
+
+input[type="email"] {
     min-width: 500px ;
-    height: 50px ;
-    padding-top: 6px ;
     padding-left: 10px ;
-    font-size: 1em ;
+    font-size: 1.5rem ;
 }
 
-.form-button-subscription {
+button[type="submit"] {
     color: #fff ;
     background-color: #e50914 ;
     border: 0px ;
     border-radius: 2px ;
     padding-right: 28px ;
     padding-left: 28px ;
-    height: 60px ;
-    font-size: 1.5em ;
+    font-size: 1.5rem ;
     margin-left: -3px ;
-    line-height: 30px ;
 }
-
