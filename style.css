@@ -19,7 +19,7 @@
             
             .first {
                 background-image: linear-gradient(to top, rgba(0, 0, 0, .9) 0%, rgba(0, 0, 0, .4) 50%, rgba(0, 0, 0, .8) 100%), url("assets/background.jpg");
-                height: 100vh;
+                min-height: 100vh;
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -90,6 +90,8 @@
                 box-sizing: border-box;
                 font-size: 16px;
                 border: solid 1px #8c8c8c;
+                border-top-left-radius: 2px;
+                border-bottom-left-radius: 2px;
                 padding-left: 10px;
             }
             
@@ -111,7 +113,7 @@
             }
             
             form>input:focus {
-                border: 1px solid rgb(0, 68, 255);
+                border: 1px solid rgb(30, 90, 253);
                 outline: none;
             }
             
