@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Netflix Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Netflix Sans Regular'), url('Assets/NetflixSansRegular.woff') format('woff');
+}
+
+body {
+    margin: 0;
+    font-family: Netflix Sans Regular;
+    color: white;
+}
+
+header img {
+    max-height: 134px;
+    max-width: 134px;
+}
+
+aside {
+    float: right;
+    margin-top: 26px;
+    margin-right: 56px;
+}
+
+select {
+    color: white;
+    background-color: black;
+    opacity: 0.7;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+header a {
+    color: white;
+    background-color: #e50914;
+    padding-top: 0.3rem;
+    padding-bottom: 0.5rem;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+main {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .9) 0%, rgba(0, 0, 0, .4) 50%, rgba(0, 0, 0, .8) 100%), url("Assets/background.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+article {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font: size 1.625rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+input[type="email"] {
+    min-width: 500px;
+    height: 48px;
+    padding-left: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+button[type="button"] {
+    color: white;
+    background-color: #e50914;
+    padding-left: 28px;
+    padding-right: 28px;
+    height: 65px;
+    margin-left: -3px;
+    font-size: 1.5em;
+}
