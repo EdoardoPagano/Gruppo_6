@@ -25,7 +25,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.8rem ;
+    font-size: 1.625rem ;
 }
 
 h3 {
@@ -89,23 +89,99 @@ aside a {
     height: 60px ;
 }
 
-input[type="email"], button[type="submit"] {
-    min-height: 100% ;
-}
 
 input[type="email"] {
+    min-height: 60px ;
     min-width: 500px ;
     padding-left: 10px ;
     font-size: 1.5rem ;
+    outline: none ;
 }
+
+input[type="email"]:focus {
+    border: 1px solid rgba(0, 0, 255, 0.986);
+}
+
 
 button[type="submit"] {
     color: #fff ;
     background-color: #e50914 ;
     border: 0px ;
     border-radius: 2px ;
+    padding-top: 19px ;
+    padding-bottom: 19px ;
     padding-right: 28px ;
     padding-left: 28px ;
     font-size: 1.5rem ;
     margin-left: -3px ;
 }
+
+.flex-container {
+    display: flex ;
+    align-items: center ;
+    justify-content: space-around ;
+    padding: 0 20px ;
+}
+
+.flex-container .item1 {
+    width: 40% ;
+}
+
+.flex-container .item2 {
+    width: 40% ;
+}
+
+.flex-container .item2 img {
+    width: 100% ;
+}
+
+.flex-container .item3 {
+    width: 35% ;
+    position: relative ;
+}
+
+.flex-container .item3 img {
+    width: 100% ;
+}
+
+.flex-container .item4 {
+    width: 45% ;
+}
+
+.download-banner {
+    background-color:black ;
+    border: 2px solid rgba(255,255,255,.25) ;
+    border-radius: 10px ;
+    display: flex ;
+    width: 60% ;
+    height: 100px ;
+    align-items: center ;
+    position: absolute ;
+    left: 20% ;
+    bottom: 10% ;
+    justify-content: space-evenly ;
+    padding-top: 5px ;
+    padding-bottom: 5px ;
+}
+
+.download-banner .boxshot {
+    width: 20% ;
+    height: 90% ;
+    background-image: url("images/boxshot.png");
+    background-size: cover ;
+}
+
+.download-banner-text .banner-row1 {
+    color: white ;
+    font-size: 16px ;
+}
+
+.download-banner-text .banner-row2 {
+    color: #0071eb ;
+    font-size: 14,4px ;
+}
+
+.download-banner .download-icon {
+    width: 20% ;
+}
+
