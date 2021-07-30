@@ -184,6 +184,19 @@
                 padding-top: 60px
             }
             
+            ul {
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-betweeen;
+            }
+            
+            li {
+                width: 20%;
+                padding: 7px 20px;
+                font-size: 13px;
+            }
+            
             .kidspic {
                 width: 45%;
             }
