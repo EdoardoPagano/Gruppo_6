@@ -12,6 +12,9 @@
 </head>
 
 <body>
+
+<!-- HEADER -->
+
     <header>
         <nav>
             <img id="logo" src="assets/img/netflix-Logo2.svg" alt="logo di Netflix">
@@ -36,7 +39,7 @@
             <h2>Guarda ciò che vuoi ovunque. Decidi quando vuoi.</h2>
             <h3>Vuoi guardare Netflix? Inserisci l'indirizzo email per abbonarti o riattivare il tuo abbonamento.</h3>
 
-            <div id="form">
+            <div class="form">
                 <input type="email" name="email" id="email" placeholder="Indirizzo email">
                 <button type="submit">Inizia <i class="fas fa-angle-right"></i></button>
             </div>
@@ -44,38 +47,99 @@
     </header>
 
     <main>
-        <section class="img-right">
-            <h2>Goditi Netflix sulla tua TV.</h2>
-            <p>Guarda Netflix su smart TV, Playstation, Xbox, Chromecast, Apple TV, lettori Blu-ray e molti altri dispositivi.</p>
+
+        <!-- SEZIONE UNO -->
+
+        <section class="sezioni">
+            <div class="left-side">
+                <h2>Goditi Netflix sulla tua TV.</h2>
+                <p>Guarda Netflix su smart TV, Playstation, Xbox, Chromecast, Apple TV, lettori Blu-ray e molti altri dispositivi.</p>
+            </div>
+
+            <div class="right-side">
+                <img src="assets/img/tv.png" alt="" id="img-tv">
+                <video  autoplay playsinline muted loop><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4"></video>
+            </div>
         </section>
 
-        <section class="img-left">
-            <h2>Scarica le tue serie da guardare offline.</h2>
-            <p>Salva facilmente i tuoi preferiti così avrai sempre qualcosa da guardare.</p>
+        <!-- SEZIONE DUE -->
+
+        <section class="sezioni">
+            <div class="right-side-2">
+                <h2>Scarica le tue serie da guardare offline.</h2>
+                <p>Salva facilmente i tuoi preferiti così avrai sempre qualcosa da guardare.</p>
+            </div>
+
+            <div class="left-side-2">
+                <img src="assets/img/mobile-0819.jpg" alt="" id="stranger-things">
+                <div id="banner">
+                    <div id="locandina">
+                        <img src="assets/stranger.png" alt="" id="locandina-img" >
+                    </div>
+                    <div id="span" >
+                        <span>Stranger Things</span>
+                        <span>Download in corso...</span>
+                    </div>
+                    <div id="gif-flex">
+                        <img src="assets/img/download-icon.gif" alt="" id="gif">
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="img-right">
-            <h2>Guarda Netflix ovunque.</h2>
-            <p>Cellulare, tablet, laptop e TV: scegli tu cosa usare per guardare in streaming film e serie TV senza limiti e senza spendere di più.</p>
+        <!-- SEZIONE TRE -->
+
+        <section class="sezioni">
+            <div class="left-side">
+                <h2>Guarda Netflix ovunque.</h2>
+                <p>Cellulare, tablet, laptop e TV: scegli tu cosa usare per guardare in streaming film e serie TV senza limiti e senza spendere di più.</p>
+            </div>
+
+            <div class="right-side">
+                <img src="assets/img/device-pile.png" alt="" id="img-device">
+                <video  autoplay playsinline muted loop><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v" type="video/mp4" id="video-2"></video> <!-- SISTEMARE VIDEO -->
+            </div>
         </section>
 
-        <section class="img-left">
-            <h2>Crea profili per i bambini.</h2>
-            <p>I bambini scoprono nuove avventure in compagnia dei loro personaggi preferiti in uno spazio tutto loro già incluso nel tuo abbonamento.</p>
+        <!-- SEZIONE QUATTRO -->
+
+        <section class="sezioni">
+            <div class="right-side-2">
+                <h2>Crea profili per i bambini.</h2>
+                <p>I bambini scoprono nuove avventure in compagnia dei loro personaggi preferiti in uno spazio tutto loro già incluso nel tuo abbonamento.</p>
+            </div>
+
+            <div class="left-side-2">
+                <img src="assets/img/kids.png" alt="immagine per la sezione bambini" id="kids" style="width: 90%;">
+            </div>
         </section>
+
+        <!-- FAQ -->
 
         <section id="faq"> <!-- display: flex - justify content: between  -->
             <h2>Domande frequenti</h2>
-            <div><p>Cos'è Netflix?</p><p>+</p></div>
-            <div><p>Quanto costa Netflix?</p><p>+</p></div>
-            <div><p>Dove posso guardare Netflix?</p><p>+</p></div>
-            <div><p>Come posso disdire?</p><p>+</p></div>
-            <div><p>Cosa posso guardare su Netflix?</p><p>+</p></div>
-            <div><p>Netflix è adatto ai bambini?</p><p>+</p></div>
 
-            <input type="email" name="email" id="email">
-            <button type="submit">Inizia ></button>
+            <div id="answer">
+                <div><p>Cos'è Netflix?</p><p>+</p></div>
+                <span class="alert"><p>Netflix è un servizio di streaming che offre una varietà di serie TV, film, documentari pluripremiati e tanto altro su una vasta gamma di dispositivi connessi a Internet. <br> Guarda quello che vuoi, in qualsiasi momento e senza interruzioni pubblicitarie. Il tutto a una quota mensile ridotta. C'è sempre qualcosa di nuovo da scoprire: aggiungiamo nuovi film e serie TV ogni settimana!</p></span>
+                <!-- <div><p>Quanto costa Netflix?</p><p>+</p></div>
+                <div><p>Dove posso guardare Netflix?</p><p>+</p></div>
+                <div><p>Come posso disdire?</p><p>+</p></div>
+                <div><p>Cosa posso guardare su Netflix?</p><p>+</p></div>
+                <div><p>Netflix è adatto ai bambini?</p><p>+</p></div> -->
+            </div>
+
+            <div id="camp-email">
+                <p>Vuoi guardare Netflix? Inserisci l'indirizzo email per abbonarti o riattivare il tuo abbonamento.</p>
+                <div class="form">
+                    <input type="email" name="email" id="email" placeholder="Indirizzo email">
+                    <button type="submit">Inizia ></button>
+                </div>
+            </div>
         </section>
+
+        <!-- FOOTER -->
+        
 
 
     </main>

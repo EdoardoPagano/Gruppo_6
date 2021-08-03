@@ -44,8 +44,9 @@
 body {
     background-color: black;
     margin: 0;
-    text-align: center;
+    
 }
+
 
 header {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 52.4%, rgba(0, 0, 0, 0.8) 100%), url("../img/bg-header.jpg");
@@ -85,12 +86,20 @@ li {
     float: right;
 }
 
+i {
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 11px;
+}
+
 li > select {
     background: rgba(0,0,0,.4);
     border: 1px solid #aaa;
     color: #fff;
     font-size: .875rem;
     padding: .5rem .7rem;
+    width: 120px;
+    text-indent: 20px;
 }
 
 li > button {
@@ -128,13 +137,13 @@ li > button {
     margin: 0 auto;
 }
 
-#form {
+.form {
     display: flex;
     align-items: flex-start;
     justify-content: center;
 }
 
-#form > input {
+.form > input {
     width: 500px;
     height: 65px;
     color: rgb(88, 88, 88);
@@ -142,7 +151,7 @@ li > button {
     padding-left: 10px;
 }
 
-#form > button {
+.form > button {
     background-color: #DF0712;
     width: 160px;
     font-size: 1.875rem;
@@ -152,10 +161,186 @@ li > button {
     letter-spacing: .1px;
 }
 
-#form > button:hover {
+.form > button:hover {
     background-color: #fd0101;
 }
 
 
+/* MAIN */
 
+.sezioni {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 8px #222;
+    padding: 70px 45px;
+    
+}
 
+/* PRIMA SEZIONE */
+
+.left-side {
+    width: 35%;
+    margin-left: 100px;
+    padding-right: 5px;
+    position: relative;
+} 
+
+.right-side {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 3.3rem;
+    margin: 0;
+    
+}
+
+p {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+#img-tv {
+    width: 80%;
+    z-index: 99999;
+}
+
+video {
+    position: absolute;
+    width: 340px;
+    margin-top: 70px;
+}
+
+/* SECONDA SEZIONE */
+
+.right-side-2 {
+    order: 2;
+    width: 35%;
+    margin-left: 100px;
+    padding-right: 5px;
+}
+
+.left-side-2 {
+    width: 35%;
+    margin-left: 100px;
+    padding-right: 5px;
+    position: relative;
+}
+
+#stranger-things {
+    width: 90%;
+}
+
+#banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #c3c3c3;
+    border-radius: 10px;
+    width: 60%;
+    position: absolute;
+    left: 14%;
+    bottom: 10px;
+    background-color: black;
+    padding: 5px;
+}
+
+#span {
+    display: flex;
+    flex-direction: column;
+  
+}
+
+#locandina {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    width: 20%;
+    /* background-color: red; */
+}
+
+#locandina-img {
+    width: 90%;
+}
+
+#gif-flex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#gif {
+    width: 60%;
+}
+
+span:nth-child(2) {
+    color: #0071eb;
+}
+
+/* TERZA SEZIONE */
+
+#img-device {
+    width: 550px;
+    z-index: 99999;
+}
+
+#video-2 {  /* -- NON FUNZIONA -- */
+    position: absolute;
+    width: 340px;
+    margin-top: 20px;
+}
+
+/* FAQ */
+
+#faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 45px;
+    height: 750px;
+}
+
+#answer {
+    width: 58%;
+}
+
+#answer > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.1em 1.5em;
+    background-color: #303030;
+    margin-bottom: 8px;
+    font-weight: 400;
+    position: relative;
+    border: none;
+}
+
+#answer > div > p { 
+    font-size: 1.8rem;
+}
+
+/* #answer > div:nth-child(even) {
+    display: none;
+}
+ */
+#answer > div >p:focus ~ span {
+    display: none;
+  }
+
+#answer > div >p:focus ~ span {
+    display: block;
+  }
+
+#camp-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#camp-email > p {
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+}
