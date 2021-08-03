@@ -1,9 +1,37 @@
+:root {
+    --gradient-homepage: linear-gradient(to top,rgba(0,0,0,.8) 100%,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     background-color: black;
+    color: white;
 }
+
+article {
+    border-bottom: 8px solid #222;
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-weight: 800;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.625rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* -----------------------HEADER ----------------------------------------- */
 
 header {
     display: flex;
@@ -15,7 +43,7 @@ header {
 aside {
     display: flex;
     justify-content: space-evenly;
-    width: 20%;
+    min-width: 20%;
 }
 
 .netflix-logo {
@@ -68,6 +96,64 @@ header a {
     line-height: 22px;
 }
 
+/* -------------FIRST SECTION--------------- */
+
 #top-homepage {
-    background-image: url("images/background-series.jpg");
+    background-image: var(--gradient-homepage), url("https://assets.nflxext.com/ffe/siteui/vlv3/9c5457b8-9ab0-4a04-9fc1-e608d5670f1a/ac4f81b7-3d82-4f6f-acfd-d2f68b720b75/IT-it-20210719-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
+
+#item-1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 25%;
+    left: 0;
+    right: 0;
+}
+
+form {
+    display: flex;
+    background-color: green;
+    position: relative;
+}
+
+#item-1 input {
+    display: block;
+    height: 60px;
+    min-width: 450px;
+    border-radius: 2px;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    padding: 10px 10px 0;
+    border: solid 1px #8c8c8c;
+    color: #000;
+}
+
+#item-1 button {
+    background-color: #e50914;
+    color: white;
+    border-radius: 2px;
+    box-sizing: border-box;
+    min-width: 74px;
+    padding: 0 40px 0 30px;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    border: 1px solid black;
+}
+
+form span {
+    filter: invert(1);
+    position: absolute;
+    right: 3%;
+    top: 32%;
+}
+
+/* ----------SECOND SECTION----------- */
+
+
