@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+
+aside {
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+}
+
+.netflix-logo {
+    width: 11rem;
+}
+
+.select-language {
+    position: relative;
+}
+
+.globo::before {
+    content: url("images/icons8-globo-16.png");
+    filter: invert(1);
+    position: absolute;
+    left: 3px;
+    bottom: 7px;
+    pointer-events: none;
+}
+
+.arrow-select::before {
+    content: url("images/arrow-12.png");
+    filter: invert(1);
+    position: absolute;
+    right: 7px;
+    bottom: 10px;
+    pointer-events: none;
+}
+
+header select {
+    background-color: rgba(0,0,0,.4);
+    color: white;
+    border: 1px solid #aaa;
+    font-size: .875rem;
+    line-height: 1.3rem;
+    padding: 0.5rem 1.375rem;
+    appearance: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+header a {
+    background-color: #e50914;
+    padding: 7px 17px;
+    border-radius: 3px;
+    line-height: 22px;
+}
+
+#top-homepage {
+    background-image: url("images/background-series.jpg");
+}
