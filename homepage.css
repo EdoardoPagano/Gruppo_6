@@ -410,6 +410,7 @@ form span {
 .faq-button::before {
     content: "+";
     font-size: 3rem;
+    font-weight: lighter;
 }
 
 .answer {
@@ -423,6 +424,7 @@ form span {
 }
 
 .question:target .answer {
+    transition: 0.1s;
     opacity: 1;
     height: auto;
     padding: 20px 30px;
@@ -432,8 +434,9 @@ form span {
 }
 
 .question:target .faq-button::before {
-    content: "-";
+    content: "x";
     font-size: 3rem;
+    font-weight: lighter;
 }
 
 #faq-section h3 {
