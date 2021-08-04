@@ -20,17 +20,26 @@ article {
 h1 {
     font-size: 3rem;
     letter-spacing: 2px;
-    font-weight: 800;
+    font-weight: 400;
     margin: 0;
 }
 
 h2 {
     font-size: 1.625rem;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 h3 {
     font-size: 1.2rem;
+    font-weight: 300;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 30px;
     font-weight: 400;
 }
 
@@ -126,7 +135,7 @@ form {
     position: relative;
 }
 
-#item-top-home input {
+input {
     display: block;
     height: 60px;
     min-width: 450px;
@@ -138,7 +147,7 @@ form {
     color: #000;
 }
 
-#item-top-home button {
+button {
     background-color: #e50914;
     color: white;
     border-radius: 2px;
@@ -329,5 +338,109 @@ form span {
 
 /* ---------- 5TH SECTION -------------  */
 
+#fifth-section {
+    display: flex;
+    align-items: center;
+    padding: 4% 0;
+    justify-content: center;
+}
 
+#fifth-section .left-item_right-item {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
 
+/* ------------ Left Side -------------- */
+
+#fifth-section .left-item {
+    width: 50%;
+}
+
+#fifth-section .left-item img {
+    width: 90%;
+}
+
+/*  ------------Right Side -------------  */
+
+#fifth-section .right-item {
+    width: 50%;
+    margin-left: 5%;
+}
+
+#fifth-section .right-item h1 {
+    font-size: 3.125rem;
+    font-weight: 400;
+}
+
+#fifth-section .right-item h2 {
+    letter-spacing: 1px;
+    font-size: 1.625rem;
+    font-weight: 300;
+}
+
+/* ---------- FAQ SECTION -------- */
+
+#faq-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#faq-section h1 {
+    padding: 3rem 0 4rem 0;
+}
+
+.faq-menu {
+    width: 60%;
+}
+
+.title {
+    background-color: #303030;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin: auto;
+}
+
+.faq-button::before {
+    content: "+";
+    font-size: 3rem;
+}
+
+.answer {
+    background-color: #303030;
+    margin: 3px 0;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 35px;
+    height: 0;
+    opacity: 0;
+}
+
+.question:target .answer {
+    opacity: 1;
+    height: auto;
+    padding: 20px 30px;
+    margin: 0;
+    border-top: 2px solid #000;
+    margin-bottom: 6px;
+}
+
+.question:target .faq-button::before {
+    content: "-";
+    font-size: 3rem;
+}
+
+#faq-section h3 {
+    margin-top: 5%;
+    font-weight: 400;
+}
+
+#faq-section form {
+    margin-bottom: 5%;
+}
