@@ -34,7 +34,7 @@ h3 {
     font-weight: 400;
 }
 
-/* -----------------------HEADER ----------------------------------------- */
+/* HEADER (Netflix Logo, Language Select, Login Button) */
 
 header {
     display: flex;
@@ -100,7 +100,7 @@ header a {
     line-height: 22px;
 }
 
-/* -------------FIRST SECTION--------------- */
+/* -------------1ST SECTION--------------- */
 
 #first-section {
     background-image: var(--gradient-homepage), url("https://assets.nflxext.com/ffe/siteui/vlv3/9c5457b8-9ab0-4a04-9fc1-e608d5670f1a/ac4f81b7-3d82-4f6f-acfd-d2f68b720b75/IT-it-20210719-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
@@ -123,7 +123,6 @@ header a {
 
 form {
     display: flex;
-    background-color: green;
     position: relative;
 }
 
@@ -134,7 +133,7 @@ form {
     border-radius: 2px;
     font-size: 1.1rem;
     box-sizing: border-box;
-    padding: 10px 10px 0;
+    padding: 5px 0px 5px 10px;
     border: solid 1px #8c8c8c;
     color: #000;
 }
@@ -158,7 +157,7 @@ form span {
     top: 32%;
 }
 
-/* ----------SECOND SECTION----------- */
+/* ----------2ND SECTION----------- */
 
 #second-section {
     display: flex;
@@ -200,7 +199,7 @@ form span {
     z-index: -1;
 }
 
-/* ------------ THIRD SECTION ----------------- */
+/* ------------ 3RD SECTION ----------------- */
 
 #third-section {
     display: flex;
@@ -275,5 +274,60 @@ form span {
 #third-section .right-item h2 {
     font-weight: 300;
 }
+
+/* ---------- 4TH SECTION -------------  */
+
+#forth-section {
+    display: flex;
+    align-items: center;
+    padding: 4% 0;
+    justify-content: center;
+    position: relative;
+}
+
+#forth-section .left-item_right-item {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ------------ Left Side -------------- */
+
+#forth-section .left-item {
+    width: 50%;
+}
+
+#forth-section .left-item h1 {
+    font-size: 3.125rem;
+    font-weight: 400;
+}
+
+#forth-section .left-item h2 {
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+/*  ------------Right Side -------------  */
+
+#forth-section .right-item {
+    width: 50%;
+    margin-left: 10%;
+}
+
+#forth-section .right-item img {
+    width: 100%;
+}
+
+#forth-section video {
+    position: absolute;
+    width: 21.5%;
+    top: 20%;
+    right: 16%;
+    z-index: -1;
+}
+
+/* ---------- 5TH SECTION -------------  */
+
 
 
