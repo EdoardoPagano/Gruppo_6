@@ -1,7 +1,6 @@
             @font-face {
                 font-family: 'Netflix Sans Regular';
                 font-style: normal;
-                font-weight: normal;
                 src: local('Netflix Sans Regular'), url('assets/NetflixSansRegular.woff') format('woff');
             }
             
@@ -53,6 +52,24 @@
                 font-size: .875rem;
                 padding: .500rem .700rem;
                 margin-right: 20px;
+            }
+            
+            .globo::before {
+                content: url("images/icons8-globo-16.png");
+                filter: invert(1);
+                position: absolute;
+                left: 3px;
+                bottom: 7px;
+                pointer-events: none;
+            }
+            
+            .arrow::before {
+                content: url("images/arrow-12.png");
+                filter: invert(1);
+                position: absolute;
+                right: 7px;
+                bottom: 10px;
+                pointer-events: none;
             }
             
             a.login {
