@@ -1,5 +1,8 @@
 :root {
-    --gradient-homepage: linear-gradient(to top,rgba(0,0,0,.8) 100%,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    --gradient-homepage: linear-gradient(to top,
+    rgba(0,0,0,.8) 0%,
+    rgba(0,0,0,.4) 50%,
+    rgba(0,0,0,.8) 100%);
 }
 
 body {
@@ -84,6 +87,7 @@ header select {
 
 a {
     text-decoration: none;
+    margin-left: 20px;
     color: white;
     font-weight: 200;
     letter-spacing: 1px;
@@ -163,17 +167,21 @@ form span {
     position: relative;
 }
 
-#left-item_right-item {
+.left-item_right-item {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 3%;
 }
 
-.left-item {
+/* ------------ Left Side -------------- */
+
+#second-section .left-item {
     width: 40%;
     margin-top: 4%;
 }
+
+/*  ------------Right Side -------------  */
 
 #second-section .right-item {
     width: 40%;
@@ -190,6 +198,82 @@ form span {
     right: 17%;
     bottom: 35%;
     z-index: -1;
+}
+
+/* ------------ THIRD SECTION ----------------- */
+
+#third-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4% 12% 4% 2%;
+}
+
+/* ------------ Left Side -------------- */
+
+#third-section .left-item {
+    width: 47%;
+    position: relative;
+}
+
+#third-section .left-item #smartphone {
+    width: 90%;
+}
+
+/* ---------- Download Banner --------- */
+
+.download-banner {
+    width: 60%;
+    height: 85px;
+    background-color: black;
+    border: 2px solid rgba(255,255,255,.25);
+    position: absolute;
+    bottom: 7%;
+    right: 25%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#stranger-things {
+    background-image: url("images/boxshot.png");
+    height: 75px;
+    width: 18%;
+    background-size: cover;
+}
+
+#download-banner-text {
+    line-height: 20px;
+}
+
+#download-banner-text span:nth-child(3) {
+    color: #0071eb;
+}
+
+#third-section .download-icon {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+#third-section .download-icon img {
+    width: 100%;
+}
+
+/*  ------------Right Side -------------  */
+
+#third-section .right-item {
+    width: 45%;
+}
+
+#third-section .right-item h1 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+#third-section .right-item h2 {
+    font-weight: 300;
 }
 
 
