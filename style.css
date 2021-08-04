@@ -43,6 +43,11 @@
             
             .rightside {
                 padding-right: 56px;
+                display: flex;
+            }
+            
+            .select-lan {
+                position: relative;
             }
             
             select {
@@ -50,25 +55,26 @@
                 border: 1px solid #aaa;
                 color: #fff;
                 font-size: .875rem;
-                padding: .500rem .700rem;
+                padding: 9px 0;
+                padding-left: 20px;
                 margin-right: 20px;
             }
             
-            .globo::before {
-                content: url("images/icons8-globo-16.png");
+            .globe::before {
+                content: url("assets/icons8-globo-16.png");
                 filter: invert(1);
                 position: absolute;
-                left: 3px;
-                bottom: 7px;
+                left: 4px;
+                bottom: 5px;
                 pointer-events: none;
             }
             
             .arrow::before {
-                content: url("images/arrow-12.png");
+                content: url("assets/arrow-12.png");
                 filter: invert(1);
                 position: absolute;
-                right: 7px;
-                bottom: 10px;
+                right: 24px;
+                bottom: 7px;
                 pointer-events: none;
             }
             
@@ -151,7 +157,6 @@
             
             .featurelist {
                 display: flex;
-                flex-wrap: wrap;
                 justify-content: space-between;
                 align-items: center;
                 padding: 1% 10%;
@@ -186,13 +191,13 @@
                 font-size: 13px;
             }
             
-            footer>select {
+            .bottom-lan select {
                 border: 1px solid rgb(75, 75, 75, .8);
                 color: #a0a0a0;
-                margin: 15px 42px;
                 font-size: 1rem;
                 width: 120px;
-                height: 50px;
+                height: 40px;
+                margin-left: 50px;
             }
             
             footer p {
@@ -265,4 +270,32 @@
             
             .faqlist {
                 margin: 40px 0px;
+            }
+            
+            .bottom-lan {
+                width: 122px;
+            }
+            
+            .bottom-lan select {
+                color: #8c8c8c;
+                border: 1px solid #8c8c8c;
+                font-size: 1rem;
+            }
+            
+            .bottom-lan .globe::before {
+                content: url("assets/icons8-globo-16.png");
+                filter: invert(1);
+                position: absolute;
+                left: 53px;
+                bottom: 7px;
+                pointer-events: none;
+            }
+            
+            .bottom-lan .arrow::before {
+                content: url("assets/arrow-12.png");
+                filter: invert(1);
+                position: absolute;
+                right: -45px;
+                bottom: 8px;
+                pointer-events: none;
             }
