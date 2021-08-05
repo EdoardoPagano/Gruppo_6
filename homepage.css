@@ -70,7 +70,7 @@ aside {
     content: url("images/icons8-globo-16.png");
     filter: invert(1);
     position: absolute;
-    left: 3px;
+    left: 5px;
     bottom: 7px;
     pointer-events: none;
 }
@@ -79,7 +79,7 @@ aside {
     content: url("images/arrow-12.png");
     filter: invert(1);
     position: absolute;
-    right: 7px;
+    right: 9px;
     bottom: 10px;
     pointer-events: none;
 }
@@ -396,7 +396,7 @@ form span {
     width: 60%;
 }
 
-.title {
+summary {
     background-color: #303030;
     padding: 20px 30px;
     display: flex;
@@ -405,38 +405,32 @@ form span {
     font-size: 1.7rem;
     font-weight: 400;
     margin: auto;
+    list-style: none;
+    margin-top: 8px;
+    cursor: pointer;
 }
 
-.faq-button::before {
+summary::after {
     content: "+";
     font-size: 3rem;
     font-weight: lighter;
+    transition: 250ms;
 }
 
 .answer {
     background-color: #303030;
     margin: 3px 0;
+    padding: 20px 30px;
     font-size: 1.7rem;
     font-weight: 400;
     line-height: 35px;
-    height: 0;
-    opacity: 0;
 }
 
-.question:target .answer {
-    transition: 0.1s;
-    opacity: 1;
-    height: auto;
-    padding: 20px 30px;
-    margin: 0;
-    border-top: 2px solid #000;
-    margin-bottom: 6px;
-}
-
-.question:target .faq-button::before {
-    content: "x";
+details[open] > summary::after {
+    content: "+";
     font-size: 3rem;
     font-weight: lighter;
+    transform: rotate(45deg);
 }
 
 #faq-section h3 {
