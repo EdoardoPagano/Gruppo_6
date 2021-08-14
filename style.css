@@ -114,11 +114,17 @@ section {
 .faq-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.accordion {
+    max-width: 65%;
 }
 
 .accordion-item {
     background-color: #303030;
     margin-bottom: 1rem;
+    padding: .8em 2.2em .8em 1.2em;
 }
 
 .accordion-link {
@@ -157,7 +163,6 @@ section {
 .accordion-item:target .accordion-link .ion-md-close { /* mostra l'icona x */
     display: block;
 }
-
 
 /* footer */
 footer {
