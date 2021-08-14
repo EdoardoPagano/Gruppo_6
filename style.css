@@ -39,6 +39,9 @@ header {
     background-color: transparent;
     border-radius: 3px;
     margin-right: 32px;
+    background-image: url(images/icons8-globo-16.png);
+    background-repeat: no-repeat;
+    background-position: 0.4em center;
 }
 
 /* main section */
@@ -73,6 +76,7 @@ h3 {
     color: white;
     /* text-align: center; */
     font-size: 19.2px;
+    font-weight: lighter;
 }
 
 form {
@@ -108,6 +112,15 @@ section {
     padding: 70px 45px;
     display: flex;
     justify-content: space-between;
+}
+
+section h1, h2{
+    display: flex;
+    text-align: left;
+}
+
+#kids {
+    max-width: 600px;
 }
 
 /* faq */
@@ -201,6 +214,9 @@ footer ul li a {
     padding: 12px 26px 12px 50px;
     font-size: 16px;
     margin-top: 20px;
+    background-image: url(images/icons8-globo-24.png);
+    background-repeat: no-repeat;
+    background-position: 0.4em center;
 }
 
 .country {
