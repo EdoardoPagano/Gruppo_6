@@ -111,6 +111,52 @@ section {
 }
 
 /* faq */
+.faq-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-item {
+    background-color: #303030;
+    margin-bottom: 1rem;
+}
+
+.accordion-link {
+    color: white;
+    font-size: 26px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.answer {
+    color: white;
+    font-size: 26px;
+}
+
+.accordion-link .ion-md-close{     /* nasconde l'icona della risposta */
+    display: none;
+}
+
+.answer {                      /* nasconde il paragrafo di risposta */
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.accordion-item:target .answer {      /* mostra il paragrafo di risposta */
+    max-height: 20rem;
+}
+
+.accordion-item:target .accordion-link .ion-md-add {      /* nasconde l'icona + */
+    display: none;
+}
+
+.accordion-item:target .accordion-link .ion-md-close { /* mostra l'icona x */
+    display: block;
+}
 
 
 /* footer */
