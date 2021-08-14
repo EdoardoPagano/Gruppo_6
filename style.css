@@ -1,133 +1,159 @@
-:root {
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Netflix Sans, Helvetica, sans-serif;
     background-color: black;
+    
+  }
+
+@font-face {
+    font-family: 'Netflix Sans';
+    src: url(NetflixSans_W_Rg.woff2) format('woff2');
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    margin: 0px 56px;
+}
+
+#logo {
+    width: 150px;
+}
+
+#log-in {
+    padding: 7px 17px;
+    color: white;
+    background-color: #e50914;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+#lang {
+    padding: 8px 22px;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    border-radius: 3px;
+    margin-right: 32px;
+}
+
+/* main section */
+
+.main-container {
+    background-image: url(images/background.jpg);
+    height: 100vh;
+    width: 100%;
+    border-bottom: 8px solid #222;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
     color: white;
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
 }
 
-h2 {color: white;
+h2 {
+    color: white;
     text-align: center;
     font-size: 26px;
-
 }
 
 h3 {
     color: white;
-    text-align: center;
-    font-size: 23px;
+    /* text-align: center; */
+    font-size: 19.2px;
 }
 
-#first {
-    background-image: url(images/background.jpg);
-    height: 100vh;
-    display: flexbox;
-    justify-content: center;
-    justify-items: center;
+form {
+    display: flex;
     align-items: center;
 }
 
-footer {
-    padding: 70px 45px 0px;
+#mail {
+    min-width: 450px;
+    min-height: 60px;
+    border: 1px solid;
 }
 
-ul {
-    list-style: none;
-    color: grey;
-    display: grid;
-    grid-template-columns: 35% 35% 35%;
-}
-
-footer>p {
-    color: grey;
-}
-
-footer>select {
-    color: grey;
-    background-color: transparent;
+#mail::placeholder {
     font-size: 16px;
-}
-
-#logo {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    padding: 1%;
-    
-}
-
-header{
-    display: flex;
-    flex-direction: row-reverse;
+    font-weight: 500;
+    padding: 10px 10px 0;
 }
 
 button {
-    background-color: red;
-    border: transparent;
+    background-color: #e50914;
     color: white;
-    border-radius: 3px;
-    height: 35px;
-    width: 80px;
-    font-size: 1rem;
+    border: none;
+    min-height: 60px;
+    width: auto;
+    font-size: 26px;
+    padding: 0 26px;
 }
 
-
-#lang-log>select {
-    color: white;
-    background-color: transparent;
-    font-size: 16px;
-    height: 35px;
-    width: 80px;
-
-
-}
-
-#kids-section {
-    height: 70vh;
+/* second section */
+section {
+    border-bottom: 8px solid #222;
     padding: 70px 45px;
-}
-
-article {
-    height: 70vh;
-    padding: 70px 45px;
-}
-
-
-#faq {
-    height: 70vh;
-    padding: 70px 45px;
-}
-
-
-
-#mail {
-    padding: 10px 10px 0px;
-    text-align: start;
-    height: 23px;
-    width: 300px;
-       
-}
-
-#faq>ul {
-    color: white;
-}
-
-ul>button {
-    background-color: grey;
-}
-
-.alignleft {
-    float: left;
-}
-
-.alignright {
-    float: right;
-}
-
-.ultimo {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+/* faq */
+
+
+/* footer */
+footer {
+   padding: 70px 50px 0px 45px;
+   max-width: 1000px;
+   margin: 0 auto;
+}
+
+footer p {
+    color: #757575;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+footer ul {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding-left: 0px;
+}
+
+footer ul li {
+    margin-bottom: 16px;
+}
+
+footer ul li a {
+    color: #757575;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+      /* select language */
+#footer-lang {
+    color: #757575;
+    border: 1px solid #757575;
+    background-color: black;
+    padding: 12px 26px 12px 50px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.country {
+    font-size: 13px;
+    margin-top: 24px;
+    margin-bottom: 13px;
 }
