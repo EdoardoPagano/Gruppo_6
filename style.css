@@ -39,9 +39,23 @@ header {
     background-color: transparent;
     border-radius: 3px;
     margin-right: 32px;
-    background-image: url(images/icons8-globo-16.png);
-    background-repeat: no-repeat;
-    background-position: 0.4em center;
+    font-size: .875rem;
+}
+
+.globe::before {
+    content: url("images/icons8-globo-16.png");
+    position: relative;
+    left: 25px;
+    top: 3px; 
+    pointer-events: none;
+}
+
+.arrow::before {
+    content: url("images/icons8-ordine-decrescente-24.png");
+    position: relative;
+    right: 60px;
+    top: 7px; 
+    pointer-events: none;
 }
 
 /* main section */
@@ -269,3 +283,11 @@ footer ul li a {
     margin-top: 24px;
     margin-bottom: 13px;
 }
+
+.arrow2::before {
+    content: url("images/icons8-gray-24.png");
+    position: relative;
+    right: 30px;
+    top: 6px; 
+    pointer-events: none;
+} 
