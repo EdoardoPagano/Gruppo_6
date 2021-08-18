@@ -47,7 +47,7 @@ header {
 /* main section */
 
 .main-container {
-    background-image: url(images/background.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .9) 0%, rgba(0, 0, 0, .4) 50%, rgba(0, 0, 0, .8) 100%), url("images/background.jpg");
     height: 100vh;
     width: 100%;
     border-bottom: 8px solid #222;
@@ -70,6 +70,7 @@ h2 {
     color: white;
     text-align: center;
     font-size: 26px;
+    font-weight: lighter;
 }
 
 h3 {
@@ -112,6 +113,7 @@ section {
     padding: 70px 45px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 section h1, h2{
@@ -119,8 +121,51 @@ section h1, h2{
     text-align: left;
 }
 
+.description h1 {
+    margin-bottom: 8px;
+}
+
+.description h2 {
+    margin-top: 19.5px;
+    margin-bottom: 6.5px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tv {
+    max-width: 80%;
+    background-size: cover;
+    height: auto;
+}
+
+video {
+    position: absolute;
+    z-index: -1;
+}
+
+/* fourth section */
+.video-2 {
+   object-fit: contain;
+}
+
+#tv2 {
+    max-width: 150%;
+}
+
+/* fifth section */
+
 #kids {
     max-width: 600px;
+}
+
+.description {
+    padding-left: 48px;
+    text-align: left;
+    width: 52%;
 }
 
 /* faq */
