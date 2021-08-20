@@ -135,6 +135,10 @@ section h1, h2{
     text-align: left;
 }
 
+.description {
+    width: 52%;
+}
+
 .description h1 {
     margin-bottom: 8px;
 }
@@ -159,15 +163,92 @@ section h1, h2{
 video {
     position: absolute;
     z-index: -1;
+    width: 25%;
+    height: auto;
+}
+
+/* third section */
+.third-section .phone-img {
+    width: 47%;
+    position: relative;
+}
+
+#third-section .phone-img #smartphone {
+    width: 90%;
+}
+
+
+.download-banner {
+    width: 60%;
+    height: 85px;
+    background-color: black;
+    border: 2px solid rgba(255,255,255,.25);
+    position: absolute;
+    bottom: 7%;
+    right: 18%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.download-banner span {
+    color: white;
+}
+
+#stranger-things {
+    background-image: url("images/boxshot.png");
+    height: 75px;
+    width: 18%;
+    background-size: cover;
+}
+
+.download-icon img {
+    width: 70%;
+    
+}
+
+#download-banner-text {
+    line-height: 20px;
+}
+
+#download-banner-text span:nth-child(3) {
+    color: #0071eb;
+}
+
+#third-section .download-icon {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+#third-section .download-icon img {
+    width: 100%;
+    z-index: -1;
 }
 
 /* fourth section */
+.video-container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .video-2 {
-   object-fit: contain;
+   /* object-fit: contain; */
+   z-index: -1;
+    width: 30%; 
+   position: relative;
+   /* max-width: 150px; */
+   /* right: 15%; */
+  
 }
 
 #tv2 {
-    max-width: 150%;
+    max-width: 90%;
+    align-items: flex-end;
 }
 
 /* fifth section */
