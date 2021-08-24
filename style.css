@@ -156,14 +156,13 @@ section h1, h2{
 
 #tv {
     max-width: 80%;
-    background-size: cover;
     height: auto;
 }
 
 video {
     position: absolute;
     z-index: -1;
-    width: 25%;
+    width: 28%;
     height: auto;
 }
 
@@ -233,22 +232,22 @@ video {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 80%;
 }
 
 
 .video-2 {
-   /* object-fit: contain; */
    z-index: -1;
-    width: 30%; 
-   position: relative;
-   /* max-width: 150px; */
-   /* right: 15%; */
-  
+   width: 25%; 
+   position: absolute;
+   transform: translate(2px, -50px);
 }
 
 #tv2 {
     max-width: 90%;
     align-items: flex-end;
+    transform: translate(5px, 20px);
+    position: relative;
 }
 
 /* fifth section */
